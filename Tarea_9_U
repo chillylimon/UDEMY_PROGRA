@@ -1,0 +1,10 @@
+function heroesThatStartsWith(arr: string[], letra: string): string[] {
+
+    const filtrados: string[] = arr.filter((hero) => hero.startsWith(letra));
+    return filtrados;
+}
+
+// Ejemplo de uso:
+let heroe: string[] = ['Batman', 'Superman', 'Mujer Maravilla', 'Flash', 'Magneto', 'Antorcha Humana'];
+let herosWithLetterS: string[] = heroesThatStartsWith(heroes, 'S');
+console.log(herosWithLetterS);

@@ -1,0 +1,7 @@
+function max(a: number, b: number, c: number): number {
+    const maxValor: number = (a > b) ? ((a > c) ? a : c) : ((b > c) ? b : c);
+    return maxValor;
+}
+
+let maxValue: number = max(5, 2, 6);
+console.log(maxValue);

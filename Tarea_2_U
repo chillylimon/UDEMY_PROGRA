@@ -1,0 +1,11 @@
+function convertirKilometrosAMillas(kilometros: number): number {
+
+    const factorConversion: number = 0.62;
+    const millas: number = kilometros * factorConversion;
+    return millas;
+}
+
+
+const kilometros: number = 10;
+const millasConvertidas: number = convertirKilometrosAMillas(kilometros);
+console.log(`${kilometros} kilómetros son aproximadamente ${millasConvertidas.toFixed(2)} millas`);
